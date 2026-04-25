@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Registro de Cultura</title>
+</head>
+<body>
+
+<div class="phone">
+    <div class="header">
+        <img src="../assets/fechar.png" alt="Voltar" onclick="voltar()" class="fechar-header">
+        <img src="../assets/logo App.png" alt="Logo AgroAgenda" class="logo-header">
+    </div>
+
+    <div class="card green">
+        🌱 Culturas Registradas
+    </div>
+
+    <div class="lista-container" id="lista-culturas">
+        </div>
+
+    <div class="content">
+        <button class="blue" id="btn-abrir-form" onclick="mostrarFormulario()">+ Adicionar Cultura</button>
+
+        <div id="area-formulario" style="display: none; width: 100%;">
+            <h3>Nova Plantação</h3>
+            
+            <select id="tipo-cultura">
+                <option value="" disabled selected>Selecione a espécie...</option>
+                
+                <optgroup label="CICLO CURTO (Retorno rápido)">
+                    <option value="Mandioca">Mandioca</option>
+                    <option value="Abacaxi">Abacaxi</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Abóbora">Abóbora</option>
+                    <option value="Pimenta">Pimenta</option>
+                    <option value="Maracujá">Maracujá</option>
+                </optgroup>
+
+                <optgroup label="CICLO LONGO (Resultados densos)">
+                    <option value="Açaí">Açaí</option>
+                    <option value="Cacau">Cacau</option>
+                    <option value="Palma">Palma</option>
+                    <option value="Andiroba">Andiroba</option>
+                </optgroup>
+
+                <optgroup label="FORRAGEIRAS (Cobertura de solo)">
+                    <option value="Puerária">Puerária</option>
+                    <option value="Feijão Guandu">Feijão Guandu</option>
+                    <option value="Crotalária">Crotalária</option>
+                </optgroup>
+            </select>
+
+            <select id="sistema-plantio">
+                <option value="" disabled selected>Sistema de Plantio...</option>
+                <option value="Solteiro (Monocultura)">Solteiro (Monocultura)</option>
+                <option value="Consorciado">Consorciado</option>
+                <option value="Agrofloresta (SAF)">Agrofloresta (SAF)</option>
+            </select>
+
+            <div style="display: flex; gap: 10px;">
+                <input type="number" id="hectares" placeholder="Área (Hectares)">
+                <input type="number" id="quantidade-mudas" placeholder="Qtd. Mudas">
+            </div>
+
+            <label style="width: 100%; text-align: left; font-size: 14px; color: #7f8c8d; margin-top: 5px;">Data do Plantio:</label>
+            <input type="date" id="data-plantio">
+
+            <label style="width: 100%; text-align: left; font-size: 14px; color: #7f8c8d; margin-top: 5px;">Previsão de Colheita:</label>
+            <input type="date" id="previsao-colheita">
+
+            <textarea id="observacoes" placeholder="Observações (adubo, fornecedor, clima...)" rows="3"></textarea>
+
+            <button class="green" onclick="salvarCultura()">Salvar Registro</button>
+            <button class="yellow" onclick="esconderFormulario()" style="margin-top: 10px; background-color: #e74c3c;">Cancelar</button>
+        </div>
+    </div>
+    
+</div>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

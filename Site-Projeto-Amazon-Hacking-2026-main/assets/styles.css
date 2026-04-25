@@ -1,0 +1,231 @@
+/* =========================================
+   RESET BÁSICO E FUNDO DA TELA
+========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e7e9;
+}
+
+/* =========================================
+   CONTAINER DO APLICATIVO (Simulando celular)
+========================================= */
+.phone {
+    width: 360px;
+    height: 700px;
+    background-color: #f7f9fa;
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border: 10px solid #2c3e50;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* =========================================
+   CABEÇALHO (Header)
+========================================= */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: relative;
+    min-height: 70px;
+}
+
+.logo-header {
+    height: 35px;
+    object-fit: contain;
+}
+
+.fechar-header {
+    position: absolute;
+    left: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.fechar-header:active {
+    transform: scale(0.9);
+}
+
+.header span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* =========================================
+   ÁREA DE CONTEÚDO
+========================================= */
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+/* Esconde a barra de rolagem geral mas permite rolar */
+.content::-webkit-scrollbar {
+    width: 0px;
+}
+
+.content h2, .content h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.content p {
+    background: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #34495e;
+    font-weight: 500;
+}
+
+/* =========================================
+   CARDS DE NAVEGAÇÃO
+========================================= */
+.card {
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px auto;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   CORES PADRÃO (Cards e Botões)
+========================================= */
+.green {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+}
+
+.yellow {
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+}
+
+.blue {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+/* =========================================
+   FORMULÁRIOS (Inputs, Selects, Textarea e Botões)
+========================================= */
+input, select, textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    outline: none;
+    transition: border 0.3s;
+    resize: none; /* Evita que o usuário deforme o textarea */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #2ecc71;
+}
+
+optgroup {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 10px;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+/* =========================================
+   LISTA DE CULTURAS SALVAS (Container)
+========================================= */
+.lista-container {
+    width: 90%;
+    max-height: 220px;
+    overflow-y: auto;
+    margin: 10px auto 20px auto;
+    padding-right: 5px; 
+}
+
+/* Estilizando a barra de rolagem da lista */
+.lista-container::-webkit-scrollbar {
+    width: 6px;
+}
+.lista-container::-webkit-scrollbar-thumb {
+    background-color: #bdc3c7;
+    border-radius: 10px;
+}
+
+.item-salvo {
+    background: #ffffff;
+    border-left: 6px solid #2ecc71;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    font-size: 15px;
+    text-align: left;
+    color: #2c3e50;
+}
+
+.item-salvo strong {
+    font-size: 16px;
+    color: #27ae60;
+}
+
+.item-salvo small {
+    color: #7f8c8d;
+    display: inline-block;
+    margin-top: 4px;
+}
