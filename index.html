@@ -1,3 +1,427 @@
-<script>
-    window.location.href = "pages/login.html";
-</script>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroAgenda — Governança para a Agricultura Familiar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">Agro<span>Agenda</span></div>
+      <div class="nav-links">
+        <a href="#problema">Problema</a>
+        <a href="#solucao">Solução</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#impacto">Impacto</a>
+        <a href="app/login.html" class="nav-cta">Acessar o App</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-orb hero-orb--a"></div>
+      <div class="hero-orb hero-orb--b"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge__dot"></span>
+          Amazon Hacking 2026 · Vila de Jutaiteua, Moju-PA
+        </div>
+        <h1>Do campo<br />ao dado.<br /><em>Sem perder.</em></h1>
+        <p class="hero-sub">
+          O AgroAgenda une uma balança inteligente a um aplicativo de gestão
+          offline-first para que o agricultor familiar conheça, de verdade, o
+          valor do que produz.
+        </p>
+        <div class="hero-actions">
+          <a href="#solucao" class="btn btn--primary">Conheça a solução →</a>
+          <a href="app/login.html" class="btn btn--ghost"
+            >Acesse um protótipo web simples</a
+          >
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mockup">
+          <div class="mockup__glow"></div>
+          <div class="mockup__device">
+            <div class="mockup__notch"></div>
+            <div class="mockup__screen">
+              <div class="mapp-header">
+                <span class="mapp-title">AgroAgenda</span>
+                <span class="mapp-avatar">👤</span>
+              </div>
+              <p class="mapp-greeting">Bom dia, produtor</p>
+              <p class="mapp-name">João Silva</p>
+              <div class="mapp-card mapp-card--green">
+                <span class="mapp-card__icon">🌱</span>
+                <div>
+                  <p class="mapp-card__label">módulo</p>
+                  <p class="mapp-card__title">Registro de Cultura</p>
+                </div>
+              </div>
+              <div class="mapp-card mapp-card--yellow">
+                <span class="mapp-card__icon">📦</span>
+                <div>
+                  <p class="mapp-card__label">módulo</p>
+                  <p class="mapp-card__title">Registro de Estoque</p>
+                </div>
+              </div>
+              <div class="mapp-card mapp-card--blue">
+                <span class="mapp-card__icon">📊</span>
+                <div>
+                  <p class="mapp-card__label">módulo</p>
+                  <p class="mapp-card__title">Relatórios de Safra</p>
+                </div>
+              </div>
+              <div class="mapp-stats">
+                <div class="mapp-stat">
+                  <p class="mapp-stat__val">1.2t</p>
+                  <p class="mapp-stat__lbl">Colhido</p>
+                </div>
+                <div class="mapp-stat">
+                  <p class="mapp-stat__val">R$3.5k</p>
+                  <p class="mapp-stat__lbl">Lucro</p>
+                </div>
+                <div class="mapp-stat">
+                  <p class="mapp-stat__val">📶</p>
+                  <p class="mapp-stat__lbl">Offline</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup__chip mockup__chip--a">⚖️ Balança Bluetooth</div>
+          <div class="mockup__chip mockup__chip--b">📡 Sync na Nuvem</div>
+          <div class="mockup__chip mockup__chip--c">
+            🌿 Açaí · Dendê · Cacau
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-bar">
+      <div class="stats-bar__item reveal">
+        <strong>0%</strong>
+        <span>Dependência de anotação manual</span>
+      </div>
+      <div class="stats-bar__item reveal">
+        <strong>100%</strong>
+        <span>Funcional sem internet</span>
+      </div>
+      <div class="stats-bar__item reveal">
+        <strong>3</strong>
+        <span>Culturas nativas suportadas</span>
+      </div>
+      <div class="stats-bar__item reveal">
+        <strong>1</strong>
+        <span>Ecossistema hardware + app integrado</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="section section--alt" id="problema">
+      <div class="section__intro reveal">
+        <p class="section__tag">O problema</p>
+        <h2 class="section__h2">O "olhômetro" custa<br />dinheiro real.</h2>
+        <p class="section__lead">
+          Na agricultura familiar amazônica, a gestão analógica cria uma
+          invisibilidade produtiva que rouba a margem de lucro do produtor — sem
+          que ele saiba.
+        </p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <span class="problem-card__icon">📋</span>
+          <h3>Registros Manuais</h3>
+          <p>
+            Cadernetas rasuradas e estimativas visuais criam distorções que se
+            traduzem em perdas financeiras invisíveis na hora de negociar.
+          </p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="problem-card__icon">⚖️</span>
+          <h3>Pesagem Imprecisa</h3>
+          <p>
+            Sem balança confiável e conectada, o agricultor fica à mercê da
+            balança do atravessador — e perde sempre na conta final.
+          </p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="problem-card__icon">📡</span>
+          <h3>Sem Conectividade</h3>
+          <p>
+            Soluções genéricas exigem internet constante — inaplicável nas
+            comunidades rurais da Amazônia, como Jutaiteua (Moju-PA).
+          </p>
+        </div>
+        <div class="problem-card reveal">
+          <span class="problem-card__icon">📉</span>
+          <h3>Invisibilidade Produtiva</h3>
+          <p>
+            Sem dados reais, o agricultor não consegue acessar crédito,
+            programas de fomento ou planejar a próxima safra com segurança.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section" id="solucao">
+      <div class="section__intro reveal">
+        <p class="section__tag">A solução</p>
+        <h2 class="section__h2">
+          Hardware de precisão.<br />Software de governança.
+        </h2>
+        <p class="section__lead">
+          Um ecossistema integrado que automatiza o fluxo de dados do campo até
+          a tomada de decisão comercial.
+        </p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-item reveal">
+          <span class="solution-item__num">01</span>
+          <div class="solution-item__icon">⚖️</div>
+          <h3>Balança Inteligente</h3>
+          <p>
+            Protótipo eletrônico com célula de carga e módulo HX711. O ESP32
+            converte o peso em dados digitais e envia via Bluetooth ao app —
+            zero digitação manual, zero erro.
+          </p>
+          <ul class="spec-list">
+            <li>Célula de Carga + HX711 para alta precisão de pesagem</li>
+            <li>ESP32: processamento de peso, produto e margem</li>
+            <li>Bluetooth: integração direta com o smartphone</li>
+            <li>Bateria recarregável para uso sem energia elétrica no campo</li>
+          </ul>
+        </div>
+        <div class="solution-item reveal">
+          <span class="solution-item__num">02</span>
+          <div class="solution-item__icon">📱</div>
+          <h3>App AgroAgenda</h3>
+          <p>
+            Desenvolvido em React Native, é a interface de governança do
+            agricultor. Recebe dados da balança, processa lucros e gera
+            relatórios de safra com visual simples.
+          </p>
+          <ul class="spec-list">
+            <li>Offline-first: dados locais sincronizados na nuvem</li>
+            <li>Cálculo instantâneo de margem de lucro por talhão</li>
+            <li>Cadastro de Açaí, Dendê, Cacau e outros cultivos</li>
+            <li>Relatórios comparativos entre períodos de safra</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section section--dark" id="funcionalidades">
+      <div class="features-header">
+        <div class="reveal">
+          <p class="section__tag">Funcionalidades</p>
+          <h2 class="section__h2">
+            Tudo que o agricultor precisa. Nada que ele não precisa.
+          </h2>
+        </div>
+        <p class="section__lead reveal">
+          Módulos pensados para a realidade amazônica — inclusivos, visuais e
+          funcionais sem sinal de internet.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <span>🌿</span>
+          <h4>Registro de Culturas</h4>
+          <p>
+            Cadastro de Açaí, Dendê, Cacau com controle de talhões, área
+            plantada e ciclo de produção.
+          </p>
+          <em>Módulo 1</em>
+        </div>
+        <div class="feature-card reveal">
+          <span>📦</span>
+          <h4>Gestão de Estoque</h4>
+          <p>
+            Controle de insumos com entradas automáticas pela balança e alertas
+            de reposição.
+          </p>
+          <em>Módulo 2</em>
+        </div>
+        <div class="feature-card reveal">
+          <span>📊</span>
+          <h4>Relatórios de Safra</h4>
+          <p>
+            Balanços de rendimento físico e análise comparativa entre safras em
+            dashboards simples.
+          </p>
+          <em>Módulo 3</em>
+        </div>
+        <div class="feature-card reveal">
+          <span>💰</span>
+          <h4>Margem em Tempo Real</h4>
+          <p>
+            Com o peso da balança, o app calcula instantaneamente a margem de
+            lucro antes de fechar o negócio.
+          </p>
+          <em>Núcleo de Cálculo</em>
+        </div>
+        <div class="feature-card reveal">
+          <span>🔌</span>
+          <h4>Offline-First</h4>
+          <p>
+            100% funcional sem internet. Dados salvos localmente e sincronizados
+            com a nuvem assim que o sinal aparecer.
+          </p>
+          <em>Infraestrutura</em>
+        </div>
+        <div class="feature-card reveal">
+          <span>🔗</span>
+          <h4>Integração Bluetooth</h4>
+          <p>
+            A balança envia o peso automaticamente ao app. Sem digitar, sem
+            errar, sem depender de intermediários.
+          </p>
+          <em>Conectividade</em>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <div class="section__intro reveal" style="text-align: center">
+        <p class="section__tag">Como funciona</p>
+        <h2 class="section__h2">Do campo à decisão,<br />em 4 passos.</h2>
+      </div>
+      <div class="flow">
+        <div class="flow__step reveal">
+          <div class="flow__icon">🔑</div>
+          <h4>Login Seguro</h4>
+          <p>
+            Acesso com credenciais do agricultor. Seus dados, sua propriedade.
+          </p>
+        </div>
+        <div class="flow__step reveal">
+          <div class="flow__icon">⚖️</div>
+          <h4>Pesar & Registrar</h4>
+          <p>
+            Balança envia o peso. O app registra cultivo, estoque ou colheita
+            automaticamente.
+          </p>
+        </div>
+        <div class="flow__step reveal">
+          <div class="flow__icon">⚙️</div>
+          <h4>Processamento</h4>
+          <p>
+            O app organiza dados de produtividade: sacas por hectare, custo de
+            insumos e margem calculada.
+          </p>
+        </div>
+        <div class="flow__step reveal">
+          <div class="flow__icon">📈</div>
+          <h4>Decisão com Dados</h4>
+          <p>
+            Dashboards simples mostram o resultado. O agricultor decide com
+            segurança.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section section--alt" id="impacto">
+      <div class="section__intro reveal">
+        <p class="section__tag">Impacto</p>
+        <h2 class="section__h2">Da subsistência ao<br />empreendedorismo.</h2>
+      </div>
+      <div class="impact-grid">
+        <blockquote class="impact-quote reveal">
+          <span class="impact-quote__mark">"</span>
+          <p>
+            Integrar saberes tradicionais ao conhecimento científico para que o
+            agricultor transite de um modelo de subsistência para o
+            empreendedorismo sustentável — com transparência comercial e
+            dignidade produtiva.
+          </p>
+          <cite>Missão do AgroAgenda · Amazon Hacking 2026</cite>
+        </blockquote>
+        <div class="impact-metrics reveal">
+          <div class="impact-metric">
+            <strong>↑ 100%</strong>
+            <span>Visibilidade sobre a margem de lucro real por safra</span>
+          </div>
+          <div class="impact-metric">
+            <strong>0 papel</strong>
+            <span>Eliminação dos registros manuais em caderneta</span>
+          </div>
+          <div class="impact-metric">
+            <strong>Offline</strong>
+            <span
+              >Funciona sem internet nas comunidades rurais da Amazônia</span
+            >
+          </div>
+          <div class="impact-metric">
+            <strong>Dados</strong>
+            <span>Histórico de safras para acesso a crédito e fomento</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="cta" id="contato">
+      <h2>Pronto para dar <em>precisão</em><br />ao seu cultivo?</h2>
+      <p>
+        O AgroAgenda está sendo desenvolvido para a agricultura familiar na
+        Amazônia. Entre em contato e faça parte do projeto.
+      </p>
+      <div class="cta__actions">
+        <a href="app/login.html" class="btn btn--primary">Acessar o App →</a>
+        <a href="mailto:contato@agroagenda.com.br" class="btn btn--ghost"
+          >Entrar em contato</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__brand">
+        <h3>AgroAgenda</h3>
+        <p>
+          Governança financeira e precisão no cultivo familiar. Amazon Hacking
+          2026 · Vila de Jutaiteua, Moju-PA.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Produto</h4>
+        <a href="#problema">O Problema</a>
+        <a href="#solucao">A Solução</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#impacto">Impacto</a>
+      </div>
+      <div class="footer__col">
+        <h4>Projeto</h4>
+        <a href="#">Amazon Hacking 2026</a>
+        <a href="#">Vila de Jutaiteua</a>
+        <a href="app/login.html">Acessar o App</a>
+        <a href="mailto:contato@agroagenda.com.br">Contato</a>
+      </div>
+      <div class="footer__bottom">
+        <span>AgroAgenda</span> · Amazon Hacking 2026 · Moju-PA · Desenvolvido
+        com 🌿 para a agricultura familiar amazônica
+      </div>
+    </footer>
+
+    <script src="assets/js/landing.js"></script>
+  </body>
+</html>

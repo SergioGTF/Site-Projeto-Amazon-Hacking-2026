@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroAgenda — Login</title>
+<link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+<div class="phone">
+  <div class="content">
+
+    <div class="login-logo">
+      <img src="../assets/images/icon.png" alt="AgroAgenda" onerror="this.style.display='none'">
+    </div>
+    <p class="login-title">AgroAgenda</p>
+    <p class="login-subtitle">Governança para o seu cultivo</p>
+
+    <div class="form-group">
+      <label class="form-label" for="usuario">Usuário</label>
+      <input id="usuario" type="text" placeholder="Seu nome de usuário" autocomplete="username">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="senha">Senha</label>
+      <input id="senha" type="password" placeholder="••••••••" autocomplete="current-password">
+    </div>
+
+    <button class="btn-submit btn-submit--green" onclick="handleLogin()">Entrar</button>
+
+    <hr class="login-divider">
+    <p class="login-footer">Amazon Hacking 2026 · Vila de Jutaiteua, Moju-PA</p>
+
+  </div>
+</div>
+<script src="../assets/js/app.js"></script>
+<script>
+  function handleLogin() {
+    const u = document.getElementById('usuario').value.trim();
+    const s = document.getElementById('senha').value.trim();
+    if (!u || !s) { toast('Preencha usuário e senha.', 'erro'); return; }
+    ir('home.html');
+  }
+</script>
+</body>
+</html>
